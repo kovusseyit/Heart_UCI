@@ -1,4 +1,9 @@
-# define a scoring function to print multiple scores
+from sklearn.model_selection import cross_val_score, StratifiedKFold
+from sklearn.metrics import make_scorer, matthews_corrcoef
+
+# define matthews score to use in cross validation scoring
+matthews = make_scorer(matthews_corrcoef)
+
 def score_this(pipe, X, y, n_splits=5):
     """Prints cross validated classification metrics for any 
        given classification pipeline using Stratified KFold.
