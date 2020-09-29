@@ -1,5 +1,5 @@
 # Heart_UCI
-Heart disease UCI project
+Heart disease prediction using UCI data from Kaggle
 
 ## Heart UCI EDA and ML Modeling
 
